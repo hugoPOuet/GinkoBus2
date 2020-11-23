@@ -50,13 +50,14 @@
         }
         {
             "src":"/icons/maskable_icon.png",
+            "sizes":"196x196",
             "type":"image/png",
-            "sizes":"274x274",
-            "purpose":"maskable"
+            "purpose":"any maskable"
         }
       ],
-  "start_url": "/pwa-examples/js13kpwa/index.html",
+  "start_url": "index.html",
   "display": "fullscreen",
-  "theme_color": "#cc3300",
-  "background_color": "#cc7400"
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#000000"
 }
