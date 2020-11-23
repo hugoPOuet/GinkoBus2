@@ -59,5 +59,14 @@
   "display": "fullscreen",
   "orientation": "portrait",
   "theme_color": "#000000",
-  "background_color": "#000000"
+  "background_color": "#000000",
+  "shortcuts":[
+    {
+        "name":"Ginko Bus",
+        "short_name":"ginko",
+        "description":"Les bus de ginko",
+        "url":"index.html",
+        "icons":[{"src":"/icons/icon-192.png","sizes":"192x192"}]
+    }
+]
 }
