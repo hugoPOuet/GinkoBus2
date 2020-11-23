@@ -1,10 +1,23 @@
 var cacheName = "ginko-v1";
-var contentToCache = [];
+var contentToCache = [
+    './index;html',
+    './js13kpwa.webmanifest',
+    './style.css',
+    './app.js',
+    './icons/favicon.ico',
+    './icons/icon-32.png',
+    './icons/icon-64.png',
+    './icons/icon-96.png',
+    './icons/icon-128.png',
+    './icons/icon-168.png',
+    './icons/icon-180.png',
+    './icons/icon-192.png',
+    './icons/icon-256.png',
+    './icons/icon-512.png',
+    './icons/maskable_icon.png',
+];
 var icons=["32","64","96","128","168","180","192","256","512"];
 
-for(var i=0; i<icons.length; i++) {
-    contentToCache.push('/icons/icon-'+icons[i]+'.png');
-}
 
 contentToCache.push('index.html');
 contentToCache.push('app.js');
