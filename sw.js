@@ -7,6 +7,7 @@ for(var i=0; i<icons.length; i++){
 }
 
 contentToCache.push('index.html');
+contentToCache.push('app.js');
 
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
@@ -26,7 +27,7 @@ self.addEventListener('fetch', (e) => {
                   return caches.open(cacheName).then((cache) => {
             console.log('[Service Worker] Caching new resource: '+e.request.url);
             cache.put(e.request, response.clone());
-            return response;
+            return response || fetchPromise;
           });
         });
       })
